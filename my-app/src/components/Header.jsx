@@ -11,7 +11,7 @@ const Header = () => {
                 Accueil
              </Link>
              <Link className='nav_about' to="/About">
-                About
+                A Propos
              </Link>
             </nav> 
         </header>

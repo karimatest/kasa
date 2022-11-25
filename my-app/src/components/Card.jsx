@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useState }from 'react';
+import { Link } from 'react-router-dom';
+import apiData from '../products.json';
 
-const card = () => {
+const Card = () => {
+const[products] = useState(apiData)
+console.log(products)
+
+
     return (
-        <div className='Card'>
-        <div className='Card-list'>
-           <img className='Card-img' src='' alt=''></img> 
-           <h2 className='Card-titre'> </h2>
-        </div>
-        </div>
-    );
-};
+     <div className='Gallery'>
+     {products.map((product) => {
+         return(
+         <div key={product.id} className='Card'>
+          <Link to={`/FicheLogement/${product.id}`} key={product.id}>
+           <img className='Card-img' src={product.cover} alt=''></img> 
+           <h2 className='Card-titre'>{product.title}</h2>
+         </Link>
+         </div>
+         )
+}) }
+      </div>
+    )
+ }
 
-export default card;
+
+
+
+export default Card;

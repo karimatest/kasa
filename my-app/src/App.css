@@ -71,7 +71,6 @@ bottom: 51.46%;
 
 }
 .FooterText{
-
 right: 690px;
 top: 48.33%;
 bottom: 29.67%;
@@ -126,8 +125,6 @@ color: #FFFFFF;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
     margin-bottom: 20px;
-
-
 }
 
 .Card-img{
@@ -138,14 +135,12 @@ left: 0%;
 right: 0%;
 top: 0%;
 bottom: 0%;
-
 background: #FF6060;
 border-radius: 10px;
    
 }
 
 .Card-titre{
-   
     position: relative;
     top: -10%;
     height: 0%;
@@ -174,4 +169,75 @@ justify-content: space-around;
 flex-wrap: wrap;
 background: #F7F7F7;
 border-radius: 25px;
+}
+.Banner-imgAbout{
+    background-image: url('./components/Images/BannerAbout.png');
+    border-radius: 25px;
+    position: absolute;
+    width: 1240px;
+    height: 223px;
+    left: 100px;
+    top: 171px;   
+}
+.container{
+    position: absolute;
+    width: 1023px;
+    height: 184px;
+    left: 208px;
+    top: 484px;
+    display: flex;
+    justify-content: center;
+    
+}
+.Collap-title{
+ width: 100%;
+ height: 40px;
+background: #FF6060;
+border-radius: 5px;
+left: 1px;
+right: 0;
+top: 0.12%;
+bottom: 78.4%;
+padding-left: 17px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+/* or 34px */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+}
+.Collap-icon{   
+    position: absolute;
+    left: 95.76%;
+    top: 5.74%;    
+}
+.Collap-content{
+    position: absolute;
+    width: 96%;
+    left: 0.24%;
+    right: 2.64%;
+    top: 22.22%;
+    bottom: 10.33%;
+    padding: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    /* or 34px */
+    color: #FF6060;
+    background: #F7F7F7;
+    border-radius: 5px;
+}
+.About-collap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
 }

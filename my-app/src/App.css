@@ -1,6 +1,8 @@
 body{
     width: 100%;
     margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
 }
 
 .Header{
@@ -147,8 +149,6 @@ border-radius: 10px;
     left: 2%;
     right: 0%;
     line-height: 142.6%;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
@@ -206,8 +206,6 @@ padding: 2px;
     height: 34px;
     width: 100px;
    margin-left: 14px;
-   font-family: 'Montserrat';
-   font-style: normal;
    font-weight: 500;
    font-size: 24px;
    line-height: 142.6%;
@@ -230,8 +228,6 @@ transform: rotate(180deg);
     width: 100%;
     left: 18px;
     top: 74px;
-font-family: 'Montserrat';
-font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 142.6%;
@@ -258,9 +254,6 @@ left: 23%;
 right: 0%;
 top: 48%;
 bottom: 0%;
-
-font-family: 'Montserrat';
-font-style: normal;
 font-weight: 700;
 font-size: 288px;
 line-height: 142.6%;
@@ -277,8 +270,6 @@ color: #FF6060;
 left: 20.49%;
 top: 111.18%;
 bottom: 35.84%;
-font-family: 'Montserrat';
-font-style: normal;
 font-weight: 500;
 font-size: 36px;
 line-height: 142.6%;
@@ -293,8 +284,6 @@ position: absolute;
 left: 40.14%;
 right: 40.14%;
 top: 142.93%;
-font-family: 'Montserrat';
-font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 142.6%;
@@ -303,4 +292,118 @@ display: flex;
 align-items: flex-end;
 text-decoration-line: underline;
 color: #FF6060;
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+}
+.slider-image{
+    width: 1260px;
+    height: 415px;
+    margin-top: 180px;
+    margin-left: 100px;
+    border-radius: 25px;
+}
+.sliderPrev{
+    position: absolute;
+    left: 10%;
+    top: 45%;
+   border: none;
+   background-color: transparent;
+}
+.sliderNext{
+    position: absolute;
+    left: 73%;
+    top: 45%;
+    border: none;
+    background-color: transparent;
+}
+.image-number{
+  position: absolute;
+  left: 42%;
+  bottom: 28%;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 18px;
+}
+.logementInfo{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.titleInfo{
+    display: flex;
+    margin-left: 100px;
+     font-weight : 500 ;
+    align-items : flex-end ;
+    color : #FF6060 ;
+}
+.locInfo{
+  font-size: 18px;
+  width: auto;
+  height: 26px;
+  line-height: 25.67px;
+  margin-top: -14px;
+  margin-left: 110px;
+  color : #FF6060 ;
+}
+.tags{
+display: flex;
+width: 30%;
+color : #FFFFFF ;
+border-radius: 10px;
+margin-left: 94px;
+
+}
+.min-tag{
+background-color: #FF6060;
+border-radius: 10px;
+text-align: center;
+width: 100px;
+height: 25px;
+font-size: 14px;
+line-height: 22px;
+margin-left: 10px;
+
+}
+.name{
+    position: absolute;
+    width: 93px;
+    height: 52px;
+    left: 1220px;
+    top: 620px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #FF6060;
+}
+.profil{
+    width: 64px;
+    height: 64px;
+    left: 1280px;
+    margin-left: 20px;
+    background: #C4C4C4;
+}
+.stars{
+    margin-left: 72%;
+    margin-top: -2%; 
+}
+
+.collapLeft{
+  display: flex;
+  width: 50%;
+  margin-top: -60px;
+  margin-left: -20px;
+}
+.collapRight{
+    display: flex;
+    width: 50%;
+    margin-left: 640px;
+    margin-top: -309px;
 }

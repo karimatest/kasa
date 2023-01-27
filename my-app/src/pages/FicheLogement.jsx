@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import apiData from '../products.json';
 import Slideshow from '../components/Slideshow';
 import LogementInfo from "../components/LogementInfo";
@@ -7,16 +8,20 @@ import Tags from "../components/Tags";
 import Profil from "../components/Profil";
 import Star from "../components/Star";
 import Collapse from "../components/Collapse";
+import { useEffect } from "react";
 
 const FicheLogemet = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  //on cherche le id actuel avec find pour récupèrere ses élèments
+  const logementId = apiData.find((item) => item.id === id);
+  useEffect(()=>{
+    if(!logementId){
+      navigate("/NotFound")
+     }
+  },[logementId,navigate] )
 
-   //on cherche le id actuel avec find pour récupèrere ses élèments
-   const logementId = apiData.find((item) => item.id === id);
-
-   if(!logementId){
-    window.location.href = "/*"
-   }else{
+   
     return (
        <section>
         {logementId && (
@@ -49,7 +54,7 @@ const FicheLogemet = () => {
       </section>
     )
    }
-}
+
 
 
 export default FicheLogemet;

@@ -2,8 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import apiData from '../products.json';
-import imageLeft from '../components/Images/vectorLeft.svg';
-import imageRight from '../components/Images/vectorRight.svg';
+import imageLeft from '../Images/vectorLeft.svg';
+import imageRight from '../Images/vectorRight.svg';
 
 function Slideshow () {
 const {id}= useParams();

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import imageIcon from '../components/Images/CollapseClo.png';
+import imageIcon from '../Images/CollapseClo.png';
 
 const Collapse = ({ title, content }) => {
     const [Open, setOpen] = useState(false)

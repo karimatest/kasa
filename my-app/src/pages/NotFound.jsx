@@ -1,5 +1,5 @@
 import React from "react";
-import Error404 from "../components/Images/404.png";
+import Error404 from "../Images/404.png";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {

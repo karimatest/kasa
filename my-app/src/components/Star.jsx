@@ -1,6 +1,6 @@
 import React from 'react';
-import Etoile from '../components/Images/Etoile.png';
-import EtoileVide from '../components/Images/EtoileVide.png';
+import Etoile from '../Images/Etoile.png';
+import EtoileVide from '../Images/EtoileVide.png';
 
 const Star = ({note}) => {
     // créer un tableau //

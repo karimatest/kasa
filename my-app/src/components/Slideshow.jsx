@@ -23,10 +23,12 @@ const nextSlide = ()=>{
     return (
         <div className="slider">
           <button className="sliderPrev">
-        <img src={imageLeft} onClick={prevSlide} alt="fleche" />
+        <img src={imageLeft} onClick={prevSlide} alt="fleche"
+         className='imgPrev' />
       </button>
       <button className="sliderNext">
-        <img src={imageRight} onClick={nextSlide} alt="fleche" />
+        <img src={imageRight} onClick={nextSlide} alt="fleche"
+         className='imgNext' />
       </button>
       {/* Images */}
       {pictures.map((picture, index) => {

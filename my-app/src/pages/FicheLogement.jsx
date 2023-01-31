@@ -36,7 +36,7 @@ const FicheLogemet = () => {
           <Profil name={logementId.host.name} picture={logementId.host.picture}/>
           <Star note={logementId.rating}/>
           </div>
-
+        <div className="Collape">
           <div className="collapLeft"> 
            <Collapse title="Description" content={logementId.description} />
           </div>
@@ -47,7 +47,7 @@ const FicheLogemet = () => {
            ))}
            /> 
           </div>
-
+        </div>
         </div>
         )
       }

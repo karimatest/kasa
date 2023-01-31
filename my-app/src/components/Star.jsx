@@ -10,9 +10,11 @@ const Star = ({note}) => {
         <div className='stars'>
           {tableau.map((tableauStar, i) =>
           tableauStar >= note ?(
-            <img key={i} src={EtoileVide} alt="étoile vide"/>
+            <img key={i} src={EtoileVide} alt="étoile vide" 
+            className='Etoile'/>
           ) : (
-            <img key={i} src={Etoile} alt="étoile pleine"/>
+            <img key={i} src={Etoile} alt="étoile pleine"
+            className='Etoile'/>
           )
           )}  
         </div>

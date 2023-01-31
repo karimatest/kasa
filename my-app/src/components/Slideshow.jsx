@@ -5,32 +5,32 @@ import apiData from '../products.json';
 import imageLeft from '../Images/vectorLeft.svg';
 import imageRight from '../Images/vectorRight.svg';
 
-function Slideshow () {
-const {id}= useParams();
-const foundProduct = apiData.find((product)=> product.id === id);
-const pictures = foundProduct.pictures;
+function Slideshow() {
+  const { id } = useParams();
+  const foundProduct = apiData.find((product) => product.id === id);
+  const pictures = foundProduct.pictures;
 
-const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0);
 
-const prevSlide = () =>{
+  const prevSlide = () => {
     setCurrent(current === 0 ? pictures.length - 1 : current - 1);
-}
-const nextSlide = ()=>{
+  }
+  const nextSlide = () => {
     setCurrent(current === pictures.length - 1 ? 0 : current + 1);
-};
+  };
 
 
-    return (
-        <div className="slider">
-          <button className="sliderPrev">
+
+  return (
+    <div className="slider">
+      <button className="sliderPrev">
         <img src={imageLeft} onClick={prevSlide} alt="fleche"
-         className='imgPrev' />
+          className={pictures.length === 1 ? 'imgPrevNone' : 'imgPrev'} />
       </button>
       <button className="sliderNext">
         <img src={imageRight} onClick={nextSlide} alt="fleche"
-         className='imgNext' />
+          className={pictures.length === 1 ? 'imgNextNone' : 'imgNext'} />
       </button>
-      {/* Images */}
       {pictures.map((picture, index) => {
         return (
           <div key={index}>
@@ -45,12 +45,16 @@ const nextSlide = ()=>{
               <strong className="image-number">
                 {current + 1}/{pictures.length}
               </strong>
+
             )}
           </div>
         );
       })}
-        </div>
-    );
+
+    </div>
+
+  );
+
 };
 
 export default Slideshow;

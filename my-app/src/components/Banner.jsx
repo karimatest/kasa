@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = () => {
     return (
         <div className='Banner-img'>
-        <section>
+        <section className='sectionBanner'>
             <h1 className='Banner'> Chez vous, partout et ailleurs</h1>
 
         </section>

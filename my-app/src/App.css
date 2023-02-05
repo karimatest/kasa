@@ -1,18 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 body{
     width: 100%;
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
 }
 
 .Header{
-width: 1240px;
+width: 100%;
 height: 68px;
 display: flex;
 justify-content: space-between;
 margin-top: 20px;
 align-items: center;
-margin-left: 182px;
 }
 
 .nav{
@@ -69,19 +77,19 @@ color: #FFFFFF;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    line-height: 264.6%;
+    line-height: 461.6%;
     display: flex;
     justify-content: center;
 }
 
 .Banner-img {
     background-image: url('./Images/banner.png');
+    background-size: cover;
     border-radius: 25px;
-    width: 1240px;
+    width: 100%;
     height: 223px;
     display: flex;
     justify-content: center;
-    margin-left: 180px;
     margin-top: 34px;
 }
 .Card{
@@ -109,6 +117,7 @@ bottom: 0%;
 background: #FF6060;
 border-radius: 10px;
 cursor: pointer; 
+object-fit: cover;
 }
 
 a {
@@ -130,7 +139,7 @@ a {
 }
 .Gallery{
 padding: 20px;
-width: 1208px;
+width: 100%;
 height: auto;
 display: flex;
 justify-content: space-around;
@@ -138,28 +147,21 @@ flex-wrap: wrap;
 background: #F7F7F7;
 border-radius: 25px;
 margin-top: 20px;
-margin-left: 180px;
+gap: 3%;
+
 }
 /*     fin de la page Home    */
 /*    la page About     */
 .Banner-imgAbout{
     background-image: url('./Images/BannerAbout.png');
+    background-size: cover;
     border-radius: 25px;
-    width: 1240px;
+    width: 100%;
     height: 223px;
-    margin-left: 180px;
+
     margin-top: 34px;
 }
 
-/*.section-collap{
-    width: 1023px;
-    height: 47px;
-    background: #FF6060;
-    border-radius: 5px;
-    border-radius: 5px;
-    margin: 130px;
-    
-}*/
 .Collap-container{
     margin: 20px;
 }
@@ -209,8 +211,8 @@ cursor: pointer;
    
 }
 .About-collap{
-    width: 1023px;
-   margin-left: 17%;
+    width: 80%;
+   margin: 20px auto;
 } 
 /*   fin de la page About   */
 /*   La page Not Found   */
@@ -247,40 +249,47 @@ text-decoration-line: underline;
 color: #FF6060;
 margin: 150px;
 }
-/*   Fin de la page d'Erreur  */
-/*    La page fiche de logement    */
+/*       Fin de la page d'Erreur  */
+/*****   La page fiche de logement  *****/
 .slider{
     width: 100%;
     height: auto;
+    position: relative;
  
 }
 .slider-image{
-    width: 1260px;
+    width: 100%;
     height: 415px;
     margin-top: 45px;
-    margin-left: 172px;
     border-radius: 25px;
+    object-fit: cover;
 }
 .sliderPrev{
     position: absolute;
-    left: 13%;
-    top: 40%;
+    left: 4%;
+    top: 50%;
    border: none;
    background-color: transparent;
    cursor: pointer;
 }
+.imgPrevNone{
+    opacity: 0;
+}
 .sliderNext{
     position: absolute;
-    left: 79%;
-    top: 40%;
+    right: 4%;
+    top: 50%;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
+.imgNextNone{
+    opacity: 0;
+}
 .image-number{
   position: absolute;
   left: 45%;
-  bottom: 34%;
+  bottom: 5%;
   color: #FFFFFF;
   background-color: transparent;
   font-weight: 500;
@@ -298,26 +307,25 @@ margin: 150px;
 }
 .titleInfo{
     display: flex;
-    margin-left: 174px;
     font-weight : 500 ;
     align-items : flex-end ;
     color : #FF6060 ;
+    margin-bottom: 10px;
 }
 .locInfo{
   font-size: 18px;
   width: auto;
   height: 26px;
   line-height: 25.67px;
-  margin-top: -14px;
-  margin-left: 174px;
   color : #FF6060 ;
+  margin-bottom: 10px;
 }
 .tags{
 display: flex;
 width: 30%;
 color : #FFFFFF ;
 border-radius: 10px;
-margin-left: 163px;
+gap: 10px;
 
 }
 .min-tag{
@@ -328,15 +336,18 @@ width: 100px;
 height: 25px;
 font-size: 14px;
 line-height: 22px;
-margin-left: 10px;
 
+
+}
+.profLoge{
+    position: relative;
 }
 .name{
     position: absolute;
-    width: 93px;
-    height: 52px;
-    left: 75%;
-    top: 558px;
+    width: 107px;
+    height: 59px;
+    right: 5%;
+    bottom: 133%;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
@@ -352,80 +363,91 @@ margin-left: 10px;
     background: #C4C4C4;
 }
 .stars{
-    margin-left: 75%;
-    margin-top: -2%; 
+   display: flex;
+   justify-content: flex-end;
+   padding: 10px;
+   gap: 8px;
 }
 
 .collapLeft{
   display: flex;
-  width: 50%;
-  margin-top: 63px;
-  margin-left: 160px;
+  width: 48%;
+  margin-top: 53px;
+  
 }
 .collapRight{
     display: block;
-    width: 47%;
-   margin-right: 266px;
-    margin-top: 63px;
+    width: 48%;
+    margin-top: 53px;
 }
 .Collape{
    display: flex;
    width: 100%;
    justify-content: space-between;
-   gap: 30px;
+   gap: 20px;
 
 }
 
 /********** Responsive Mobile      ********/
 
-@media (min-width:350px)and (max-width: 918px){
+@media (max-width: 480px){
+
   .body{
-    
-    width: 375px;
+    width: 100%;
   }
+ #root{
+    max-width: 600px;
+    margin: 0 auto;
+ }
+
   .Header{
     height: 70px;
-    width: 335px;
-    margin: 15px 0px 0px 12px;
+    width: 100%;
   }
   .HeaderLogo{
-    width: 97px;
+    width: 20%;
     height: 41px;
-    margin-left: 7px;
+    margin: 10px;
   }
  .nav{
     height: 30px;
-    width: 209px;
-    margin-left: 40px;
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+    
  }
  .nav_home{
-    width: 77px;
+    width: 30%;
     height: 32px;
     font-size: 17px;
+    margin-left: 62px;
  }
  .nav_about{
     height: 31px;
-    width: 98px;
+    width: 34%;
     font-size: 17px;
-    margin: 0px;
+    margin-left: 20px;
+   
  }
 
  .Home, .About, .NotFound{
-   width: 375PX;
-   padding: 5px;
+   width: 100%;
    
  }
+ .sectionBanner{
+    width: 100%;
+ }
 .Banner-img{
-    width: 335.27px;
+    width: 100%;
     height: 111.17px;
-    margin: 10px 5px 0px 8px;
     border-radius: 10px;
-    background: url(./Images/bannerMobile.png); 
+    background: url(./Images/bannerMobile.png);
+    background-size: cover; 
     background-repeat: no-repeat;
 }
 .Banner{
     height: 48px;
-    width: 217px;
+    width: 100%;
     font-size: 20px;
     color: #FFFFFF;
     background-color: transparent;
@@ -434,25 +456,30 @@ margin-left: 10px;
 }
 .Gallery{
 height: auto;
-width: 335px;
+width: 100%;
 border-radius: 0px;
 padding: 0;
-margin: 10px 5px 0 10px;
+object-fit: cover;
 }
 .Card{
     height: 255px;
-    width: 336px;
+    width: 100%;
     border-radius: 10px;
     margin-top: 15px; 
     margin-bottom: 5px;
+    object-fit: cover;
 }
 .Card-img{
     height: 255px;
-    width: 335px;
+    width: 100%;
+    object-fit: cover;
+}
+.Card-titre{
+    width: 300px;
 }
 .Footer{
     height: 189px;
-    width: 375px;
+    width: 100%;
      
 }
 .FooterLogo{
@@ -461,34 +488,32 @@ margin: 10px 5px 0 10px;
     margin-left: 23px;
 }
 .FooterText{
-    height: 46px;
-    width: 513px;
-    margin-left: 375PX;
+    height: 23px;
+    width: 50%;
     font-size: 12px;
-    margin-top: 0px;
+    margin: 10px auto;
 }
 .Banner-imgAbout{
-    height: 223px;
-    width: 336px;
+    height: 180px;
+    width: 100%;
     border-radius: 10px;
     background: url(./Images/BannerAboutM.png); 
     background-repeat: no-repeat;
-    margin: 10px 5px 5px 15px;
+    background-size: cover;
 }
 .About{
     height: auto;
 }
 .About-collap{
-   width: 484px;
-    margin: 10px 5px 0px 10px;
+   width: 80%;  
     
 }
 .title-icon{
     height: 29px;
 }
 .Collap-container{
-    width: 332px;
-    margin: 10px 8px 30px 4px;
+    width: 100%;
+    margin: 20px auto;
 }
 
 .NotFound{
@@ -511,28 +536,20 @@ margin: 10px 5px 0 10px;
     font-size: 15px;
     margin: 50px 50px 50px 50px; 
 }
-/*    La page Fiche logement mobile */
-/*.FicheLogement{
-    height: auto;
+/******  La page Fiche logement mobile ******/
 
-}*/
+
+
 .slider-image{
     height: 255px;
-    width: 336px;
-    margin-left: 10px;
+    width: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
-.sliderPrev{
-    margin-top: -15px;
-}
-.sliderNext{
-    margin-top: -15px;
-    margin-left: -10px;
-}
+
 .imgPrev{
     width: 24px;
     height: 24px;
-    margin-left: -33px;
     cursor: pointer;
 }
 .imgPrevNone{
@@ -541,6 +558,8 @@ margin: 10px 5px 0 10px;
 .imgNext{
     width: 24px;
     height: 24px;
+    cursor: pointer;
+    
 }
 .imgNextNone{
     opacity: 0;
@@ -548,13 +567,14 @@ margin: 10px 5px 0 10px;
 .image-number{
     width: 24px;
     height: 24px;
-    margin-bottom: 59px;
     font-size: 12px;
+    left: 175px
 }
+
 .titleInfo{
     width: 335px;
     height: 46px;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     font-size: 18px;
 }
 .locInfo{
@@ -562,54 +582,58 @@ margin: 10px 5px 0 10px;
     height: 23px;
     padding: 5px;
     font-size: 14px;
-    margin-left: 5px;
+  
 }
 .tags{
-   margin-left: 0px;
+   margin-left: 3px;
    width: 76%;
    height:19px;
    margin-bottom: 22px;
 }
 .min-tag{
    height: 21px;
-   width: 84px;
+   width: 88px;
    border-radius: 5px;
 }
 .stars{
-    margin-left: 10px;
-    margin-top: 41px;
+    justify-content: start;
+    gap: 0;
 }
+
 .Etoile{
     width: 15px;
     height: 15px;
     padding: 2px;
 }
 .name{
-    margin-left: -36px;
+    margin-left: -49px;
     height: 33px;
     width: 93px;
     font-size: 12px;
-    position: absolute;
-    top:535px; 
+    top: 10px;
+     
 }
 .profil{
     height: 32px;
    width: 32px;
 }
 .Collape{
+    width: 90%;
    flex-direction: column;
+   margin: 0 auto;
+
 }
 .collapLeft{
   height: auto;
-  width: 335px;
-  margin-left:10px;
+  width: 100%;
   border-radius: 5px;
+
 }
 .collapRight{
     height: auto;
-    width: 335px;
+    width: 100%;
     border-radius: 5px;
-    margin-left: 10px;
+   
 }
 .Collap-title{
     height: 19px;
@@ -618,9 +642,10 @@ margin: 10px 5px 0 10px;
 }
 .Collap-content{
     height: auto;
-     width: 307px;
+     width: 100%;
      font-size: 12px;
      border-radius: 5px;
 }
 }
+
 

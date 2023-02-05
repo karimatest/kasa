@@ -4,6 +4,7 @@ import imageIcon from '../Images/CollapseClo.png';
 const Collapse = ({ title, content, contentArray }) => {
     const [Open, setOpen] = useState(false)
     
+    
 return Open ? (
     <div>
        <div className="title-icon">

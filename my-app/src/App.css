@@ -249,8 +249,8 @@ text-decoration-line: underline;
 color: #FF6060;
 margin: 150px;
 }
-/*       Fin de la page d'Erreur  */
-/*****   La page fiche de logement  *****/
+/**************  Fin de la page d'Erreur ***********/
+/***********   La page fiche de logement **********/
 .slider{
     width: 100%;
     height: auto;
@@ -395,11 +395,8 @@ line-height: 22px;
   .body{
     width: 100%;
   }
- #root{
-    max-width: 600px;
-    margin: 0 auto;
- }
-
+ 
+/***************  Header Mobile *********/
   .Header{
     height: 70px;
     width: 100%;
@@ -430,10 +427,13 @@ line-height: 22px;
    
  }
 
+ /****************   Fin de Header Mobile    **********/
+
  .Home, .About, .NotFound{
    width: 100%;
-   
  }
+
+ /****************    La page Home Mobile    ***********/
  .sectionBanner{
     width: 100%;
  }
@@ -446,12 +446,11 @@ line-height: 22px;
     background-repeat: no-repeat;
 }
 .Banner{
-    height: 48px;
+    height: 103pxpx;
     width: 100%;
     font-size: 20px;
     color: #FFFFFF;
     background-color: transparent;
-    line-height: 100%;
     padding: 10px;
 }
 .Gallery{
@@ -463,7 +462,6 @@ object-fit: cover;
 }
 .Card{
     height: 255px;
-    width: 100%;
     border-radius: 10px;
     margin-top: 15px; 
     margin-bottom: 5px;
@@ -474,9 +472,13 @@ object-fit: cover;
     width: 100%;
     object-fit: cover;
 }
+
 .Card-titre{
     width: 300px;
 }
+/****************     Fin de la page Home Mobile    ********/
+
+/***************    Responsive Footer *********/
 .Footer{
     height: 189px;
     width: 100%;
@@ -491,8 +493,11 @@ object-fit: cover;
     height: 23px;
     width: 50%;
     font-size: 12px;
-    margin: 10px auto;
+    margin: 15px 0 0 39px;
 }
+
+/*****************    La fin de la page footer Mobile   **********/
+/***************** La page About Mobile    *************/
 .Banner-imgAbout{
     height: 180px;
     width: 100%;
@@ -516,29 +521,33 @@ object-fit: cover;
     margin: 20px auto;
 }
 
+/******************** Fin de la page About MObile  ***********/
+/********************  La page  NotFound Mobile **********/
 .NotFound{
-    height: 750px;
+    height: auto;
+    width: 100%;
 }
 .Error {
     width: 214px;
     height: 85px;
 }
 .Error-p{
-    height: 52px;
-    width: 260px;
+    height: 100px;
+    width: 70%;
     font-size: 20px;
-    margin: 10px 0px 0 50px;
+    margin: 20px 0 20px 55px;
     padding: 20px;
 }
 .Error-link{
     height: 52px;
-    width: 260px;
+    width: 50%;
     font-size: 15px;
-    margin: 50px 50px 50px 50px; 
+    margin: 55px auto;
 }
+
+/**************** Fin de la page NotFound Mobile **************/
+
 /******  La page Fiche logement mobile ******/
-
-
 
 .slider-image{
     height: 255px;
@@ -646,6 +655,7 @@ object-fit: cover;
      font-size: 12px;
      border-radius: 5px;
 }
+/******************** Fin de la page Fiche Logement Mobile ********/
 }
 
 

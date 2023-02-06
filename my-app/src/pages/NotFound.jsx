@@ -9,7 +9,8 @@ const NotFound = () => {
             <img className="Error" src={Error404} alt="page d'erreur" ></img>
           </div>
           <p className="Error-p">
-          Oups! La page que vous demandez n'existe pas.
+              Oups! La page que 
+           vous demandez n'existe pas.
           </p>
           <Link to={'/'} className="Error-link">
             Retour sur la page d'acceuil

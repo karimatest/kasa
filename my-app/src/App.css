@@ -388,7 +388,17 @@ line-height: 22px;
 
 }
 
-/********** Responsive Mobile      ********/
+/*************************   Responsive Mobile   *******************/
+@media (max-width: 570px){
+.nav_about{
+    margin: 0;
+}
+ .Banner{
+    width: 100%;
+    font-size: 5.84vw;
+    margin-top: 32px;
+ }
+}
 
 @media (max-width: 480px){
 
@@ -446,12 +456,13 @@ line-height: 22px;
     background-repeat: no-repeat;
 }
 .Banner{
-    height: 103pxpx;
+    height: 120px;
     width: 100%;
     font-size: 20px;
     color: #FFFFFF;
     background-color: transparent;
     padding: 10px;
+    margin: 0;
 }
 .Gallery{
 height: auto;
